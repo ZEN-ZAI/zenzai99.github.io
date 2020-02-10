@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booking</title>
+
+    <style>
+        #block_container {
+            text-align: center;
+        }
+
+        #block {
+            display: inline-block;
+            text-align: left;
+        }
+
+        #block2 {
+            display: block;
+        }
+
+        .label {
+            display: block;
+            font: 15px 'Fira Sans', sans-serif;
+            height: 20px;
+        }
+
+        select  {
+
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 1px;
+            background-color: white;
+            width: 150px;
+            height: 30px;
+        }
+
+        input[type=date] {
+
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 1px;
+            background-color: white;
+            width: 150px;
+            height: 30px;
+        }
+
+        input[type=number] {
+
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 1px;
+            background-color: white;
+            width: 45px;
+            height: 20px;
+        }
+
+        input[type=button] {
+            background-color: rgb(243, 92, 65);
+            color: white;
+            padding: 16px 32px;
+            margin: 4px 2px;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <div id="block_container">
+        <dir id="block">
+            <span class="label">Flying form</span>
+            <select>
+                <option value="Destination1">Destination 1</option>
+                <option value="Destination2">Destination 2</option>
+                <option value="Destination3">Destination 3</option>
+                <option value="Destination4">Destination 4</option>
+            </select>
+        </dir>
+        <dir id="block">
+            <span class="label">To</span>
+            <select>
+                <option value="Destination1">Destination 1</option>
+                <option value="Destination2">Destination 2</option>
+                <option value="Destination3">Destination 3</option>
+                <option value="Destination4">Destination 4</option>
+            </select>
+        </dir>
+    </div>
+
+    <!-- Time -->
+    <div id="block_container">
+        <dir id="block">
+            <span class="label">Departing</span>
+            <input type="date">
+        </dir>
+        <dir id="block">
+            <span class="label">Returning</span>
+            <input type="date">
+        </dir>
+    </div>
+
+    <!-- Number -->
+    <div id="block_container">
+        <dir id="block">
+            <span class="label">Adult</span>
+            <input type="number" min="1" max="5">
+        </dir>
+        <dir id="block">
+            <span class="label">child</span>
+            <input type="number" min="1" max="5">
+        </dir>
+        <dir id="block">
+            <span class="label">infant</span>
+            <input type="number" min="1" max="5">
+        </dir>
+        <dir id="block">
+            <span class="label" style="color: orange;">Currency</span>
+            <select>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+                <option value="THB">THB</option>
+            </select>
+        </dir>
+
+        <br>
+        <dir id="block2">
+            <input type="button" value="SEARCH">
+        </dir>
+    </div>
 </body>
+
 </html>
